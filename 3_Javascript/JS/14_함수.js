@@ -138,7 +138,6 @@ document.querySelector("#btn3a").addEventListener("click", function() {
   numbers.push( returnTest(2,5) ); // 함수를 호출해서 되돌려받은 값을 push 하기
 
   console.log(numbers);
-  
 
   console.log("합계 : ", sumFn(numbers));
 })
