@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestJs</title>
+
+    <link rel="stylesheet" href="../CSS/Testjs.css">
+  </head>
+
+  <body>
+
+    <main class="mainTag">
+
+      <form action="" class="mainForm">
+        <div>
+          <table class="mainTable">
+            <tbody>
+              
+              <tr>
+                <td>
+                  <span>너비 : </span>
+                </td>
+
+                <td>
+                  <input type="number" id="inwid"> px
+                </td>
+
+                <td>
+                  <span>높이 : </span>
+                </td>
+
+                <td>
+                  <input type="number" id="inhei"> px
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span>글자크기 : </span>
+                </td>
+                
+                <td>
+                  <input type="number" id="infont"> px
+                </td>
+
+                <td>
+                  <span>굵기 : </span>
+                </td>
+
+                <td>
+                  보통 <input type="radio" name="fontBold" value=""> &emsp;
+                  굵게 <input type="radio" name="fontBold" value="bold">
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span>글자색 : </span>
+                </td>
+
+                <td>
+                  <input type="test" id="incolor">
+                </td>
+
+                <td>
+                  <span>배경색 : </span>
+                </td>
+
+                <td>
+                  <input type="test" id="inback">
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span>가로정렬 : </span>
+                </td>
+
+                <td colspan="3">
+                  왼쪽<input type="radio" name="horizonText" value="left"> &emsp;
+                  가운데<input type="radio" name="horizonText" value="center"> &emsp;
+                  오른쪽<input type="radio" name="horizonText" value="right">
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span>세로정렬 : </span>
+                </td>
+
+                <td colspan="3">
+                  위<input type="radio" name="verticalText" value="baseline"> &emsp;
+                  가운데<input type="radio" name="verticalText" value="center"> &emsp;
+                  아래<input type="radio" name="verticalText" value="end">
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <span>출력 문자열 : </span>
+                </td>
+
+                <td colspan="3">
+                  <input type="text" id="inText">
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </form>
+
+      <div class="outputTag">
+        <button onclick="comitFn()">적용하기</button>
+
+        <!-- 출력할 부분 -->
+        <section id="outputDisplay">
+        </section>
+
+      </div>
+
+    </main>
+    
+    <script src="../JS/TestJs.js"></script>
+  </body>
+
+</html>
