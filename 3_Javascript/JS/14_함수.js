@@ -139,6 +139,8 @@ document.querySelector("#btn3a").addEventListener("click", function() {
 
   console.log(numbers);
 
+  console.log();
+
   console.log("합계 : ", sumFn(numbers));
 })
 
