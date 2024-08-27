@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>짝수홀수구하기</h1>
+    <h3>짝수홀수를 3초뒤에 alert으로 띄우기</h3>
+    <input type="number" id="numberInput">
+    <button id="btn">click</button>
+
+    <script>
+
+        let interval;
+
+        document.getElementById("btn").addEventListener("click", () => {
+            let hash = false;
+
+            if(hash) return;
+            
+            const number = document.getElementById("numberInput");
+
+            interval = setInterval(() => {
+                if(number % 2 == 0) {
+                    alert("짝수입니다.");
+                } else {
+                    alert("홀수입니다.");
+                }
+            }, 3000);
+
+        });
+
+    </script>
+</body>
+
+</html>
